@@ -1,0 +1,40 @@
+/* CSS STYLE RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* WEBSITE CONSTRAINTS */
+:root {
+  /* Font */
+  --fontHeader: "";
+  --fontBody: "";
+
+  /* Color */
+  --primaryColor: #2e4057; /* a strong, confident base */
+  --secondaryColor: #ee583f; /* a bold, warm contrast */
+  --accentColor: #f7b3cc; /* a soft and inviting, great for callouts, buttons, or hover states */
+  --tertiaryColor: #c7b65e; /* adds vintage warmth, can be used for headings, emphasis, or alerts */
+  --backgroundColor: #fff7ee; /* a clean, soft background that complements darker text */
+  --textColor: #131c26; /* a near-black for contrast */
+}
+
+body {
+  min-width: 375px;
+  font-family: var(--fontBody);
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  padding: 0 2rem;
+}
+
+.container {
+  max-width: 70rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
