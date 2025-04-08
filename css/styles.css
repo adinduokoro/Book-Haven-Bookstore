@@ -24,17 +24,57 @@
 body {
   min-width: 375px;
   font-family: var(--fontBody);
+  color: var(--textColor);
 }
 
 section {
   display: flex;
-  justify-content: center;
   padding: 0 2rem;
 }
 
 .container {
   max-width: 70rem;
   width: 100%;
-  display: flex;
-  flex-direction: column;
+  padding: 4rem 0;
+  border: 3px solid purple;
+}
+
+h1 {
+  font-size: 1.875rem;
+  font-family: "Times New Roman", sans-serif;
+}
+
+.display-text{
+    font-size: 2.5rem;
+    font-family: 2.5rem;
+}
+
+h2{}
+
+h3{
+    
+}
+
+p{
+    font-size: 1rem;
+    font-family: "Calibri", sans-serif;
+}
+
+
+.body-large{
+    font-size: 1.25rem;
+    font-family: "Calibri", sans-serif;
+}
+
+.button-text{
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
