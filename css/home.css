@@ -40,7 +40,6 @@
 }
 
 .hero {
-  border: 3px solid green;
   display: flex;
   justify-content: center;
   height: calc(100vh - 5rem);
@@ -62,7 +61,6 @@
 .promo-cards{
     display: flex;
     justify-content: space-between;
-    border: 3px solid green;
     text-align: center;
 }
 
@@ -82,4 +80,6 @@
 .product-image{
     display: flex;
     justify-content: center;
+  border: 3px solid purple;
+
 }
