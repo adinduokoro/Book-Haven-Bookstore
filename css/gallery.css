@@ -1,0 +1,11 @@
+.gallery {
+  border: 3px solid pink;
+  display: flex;
+  justify-content: center;
+}
+
+.gallery-container {
+  border: 3px solid green;
+}
+
+
