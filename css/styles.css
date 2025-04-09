@@ -25,6 +25,7 @@ body {
   min-width: 375px;
   font-family: var(--fontBody);
   color: var(--textColor);
+  background-color: var(--backgroundColor);
 }
 
 section {
@@ -44,37 +45,36 @@ h1 {
   font-weight: 700;
 }
 
-.display-text{
-    font-size: 2.5rem;
-    font-family: "Trebuchet MS", sans-serif;
+.display-text {
+  font-size: 2.5rem;
+  font-family: "Trebuchet MS", sans-serif;
 }
 
-h2{
+h2 {
   font-size: 1.2rem;
   font-family: "Impact";
   font-weight: 500;
 }
 
-h3{
-    font-size: 0.9375rem;
-    font-family: "Comic Sans MS", sans-serif;
+h3 {
+  font-size: 0.9375rem;
+  font-family: "Comic Sans MS", sans-serif;
 }
 
-p{
-    font-size: 1rem;
-    font-family: "Calibri", sans-serif;
+p {
+  font-size: 1rem;
+  font-family: "Calibri", sans-serif;
 }
 
-
-.body-large{
-    font-size: 1.25rem;
-    font-family: "Calibri", sans-serif;
+.body-large {
+  font-size: 1.25rem;
+  font-family: "Calibri", sans-serif;
 }
 
-.button-text{
-    font-size: 1rem;
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
+.button-text {
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
 }
 
 ul,
@@ -85,12 +85,21 @@ li {
 }
 
 a {
-  all: unset; 
-  cursor: pointer; 
+  all: unset;
+  cursor: pointer;
   text-decoration: none;
 }
 
-
+.site-gradient {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), transparent);
+  pointer-events: none;
+}
 
 /* WEBSITE COMPONENTS */
 /* Navigation Component Start--------------------------------------- */
@@ -141,7 +150,7 @@ a {
   transition: color 0.3s ease-in-out;
 }
 
-.navigation-link:hover{
+.navigation-link:hover {
   color: var(--secondaryColor);
 }
 /* Navigation Component End--------------------------------------- */
@@ -150,14 +159,19 @@ a {
 
 /* Page Header Component Start--------------------------------------- */
 .page-header-title {
-  border: 3px solid pink;
   display: flex;
   justify-content: center;
+  background-image: url("../images/header.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--backgroundColor);
+  position: relative;
 }
 
 .page-header-title-container {
-  border: 3px solid green;
   min-height: 24vh;
+  z-index: 1;
   display: flex;
   align-items: center;
 }
@@ -185,7 +199,7 @@ a {
   gap: 1rem;
 }
 
-.footer-get-in-touch-links{
+.footer-get-in-touch-links {
   max-width: 20rem;
   width: 100%;
   display: flex;
@@ -201,22 +215,23 @@ a {
   gap: 0.5rem;
 }
 
-.footer-social-links{
+.footer-social-links {
   display: flex;
-align-items: center;
-gap: 1rem;
+  align-items: center;
+  gap: 1rem;
 }
 
 .footer-social-links li {
+  cursor: pointer;
   display: flex;
-width: 2.75rem;
-height: 2.75rem;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-border-radius: 6.25rem;
-border: 1px solid #000;
-padding: 0.5rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6.25rem;
+  border: 2px solid var(--backgroundColor);
+  padding: 0.5rem;
 }
 
 .footer-social-links li img {
