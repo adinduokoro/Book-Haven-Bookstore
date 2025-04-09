@@ -6,6 +6,34 @@
 
 .gallery-container {
   border: 3px solid green;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
+.gallery-categories {
+  border: 3px solid green;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  gap: 1rem;
+}
 
+.gallery-category{
+  display: flex;
+height: 25rem;
+padding: 2rem;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 1rem;
+border: 3px solid black;
+}
+
+.gallery-category-image-container{
+  width: 12rem;
+height: 12rem;
+flex-shrink: 0;
+border: 3px solid blue;
+}
