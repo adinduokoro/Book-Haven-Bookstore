@@ -77,6 +77,11 @@ p {
   font-weight: 700;
 }
 
+.caption-text{
+  font-family: "Comfortaa", sans-serif;
+  font-size: 0.6875rem;
+}
+
 ul,
 li {
   list-style: none;
@@ -161,7 +166,7 @@ a {
 .page-header-title {
   display: flex;
   justify-content: center;
-  background-image: url("../images/header.jpg");
+  background-image: url("../images/header.jpg"); /* https://pixabay.com/photos/books-library-room-school-study-2596809/ */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

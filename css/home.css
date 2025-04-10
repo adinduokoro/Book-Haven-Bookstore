@@ -114,7 +114,7 @@ color: #fff;
   padding: 1rem;
   background-color: var(--backgroundColor);
   color: var(--primaryColor);
-  border: 2px solid var(--accentColor);
+  border: 1px solid var(--accentColor);
 }
 
 .shopping-perk h3 {
@@ -128,7 +128,6 @@ color: #fff;
 
 .categories-container {
   display: flex;
-  padding: 0 0;
   gap: 2rem;
   flex-direction: column;
 }
@@ -148,6 +147,15 @@ color: #fff;
   text-align: center;
   border-radius: 4px;
   cursor: pointer;
+  color: var(--primaryColor);
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.categories-grid-container li:hover{
+  background-color: var(--tertiaryColor);
+  color: var(--backgroundColor);
+  font-weight: 600;
 }
 
 

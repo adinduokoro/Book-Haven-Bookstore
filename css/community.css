@@ -1,6 +1,7 @@
 .testimonials {
   display: flex;
   justify-content: center;
+  background-color: #fff;
 }
 
 .testimonials-container {
@@ -15,22 +16,31 @@
 }
 
 .customer-testimonial {
+  border-radius: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   width: 100%;
   min-height: 25rem;
-  border: 3px solid gold;
+  border: 1px solid var(--accentColor);
+  background-color: var(--backgroundColor);
   justify-content: center;
   gap: 2rem;
+  padding: 2rem;
 }
 
 .customer-image-container {
   width: 10rem;
   height: 10rem;
   border-radius: 6.25rem;
-  border: 1px solid #000;
+  overflow: hidden;
+}
+
+.customer-image-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .customer-info {
@@ -40,34 +50,43 @@
 }
 
 .community-involvement {
-  border: 3px solid orange;
   display: flex;
   justify-content: center;
 }
 
 .community-involvement-container {
-  border: 1px solid #000;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
 .community-bulletins {
-  border: 3px solid blue;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1rem;
 }
 
 .community-bulletin {
   width: 100%;
-  border: 3px solid blue;
+  display: flex;
+  flex-direction: column;
   max-width: 46rem;
   padding: 4rem;
+  gap: 1rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  border: 1px solid var(--accentColor);
+
+}
+
+.community-bulletin h3 {
+  color: var(--primaryColor);
 }
 
 .event {
   display: flex;
+  background-color: #fff;
   justify-content: center;
 }
 
@@ -79,11 +98,17 @@
 .event-image-container,
 .event-info {
   width: 100%;
-  border: 3px solid orange;
   min-height: 23.6rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
+}
+
+.event-image-container img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .event-info {
@@ -95,4 +120,12 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+
+.event-description h2 {
+  color: var(--accentColor);
+}
+
+.event-email{
+  
 }

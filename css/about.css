@@ -1,11 +1,9 @@
 .about-us {
   display: flex;
   justify-content: center;
-  border: 3px solid teal;
 }
 
 .about-us-container {
-  border: 3px solid fuchsia;
   min-height: 20.4rem;
   display: flex;
   height: 100%;
@@ -14,8 +12,13 @@
 
 .about-us-content,
 .about-us-image {
-  border: 3px solid pink;
   width: 100%;
+}
+
+.about-us-image img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .about-us-content {
@@ -23,10 +26,6 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-}
-
-.about-us-content p {
-  height: 16rem;
 }
 
 .business-hours {
@@ -38,6 +37,27 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+gap: 2rem;
+text-align: center;
+}
+
+.business-hours-container h2 {
+  align-self: flex-start;
+}
+
+.hours-of-operations{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.hours-of-operations li p {
+  color: var(--textColor);
+  transition:  color 0.15s ease-in-out;
+}
+
+.hours-of-operations li p:hover {
+  color: var(--secondaryColor);
 }
 
 .client-feedback {
