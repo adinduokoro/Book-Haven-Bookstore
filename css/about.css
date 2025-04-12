@@ -93,7 +93,13 @@
 
 .checkbox {
   flex-direction: row-reverse;
-  align-self: flex-start;
+  white-space: nowrap;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  gap: 0.5rem;
 }
 
+.checkbox #custom-order {
+width: auto;}
 

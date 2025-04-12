@@ -125,6 +125,22 @@ a {
   text-decoration: none;
 }
 
+input,
+textarea {
+  font-family: inherit;
+  font-size: 1rem;
+  border: 2px solid black;
+  padding: 0.5rem 0.5rem;
+  width: 16rem;
+  border-radius: 0.5rem;
+  height: 100%;
+}
+
+textarea {
+  height: 8rem;
+  resize: none;
+}
+
 .site-gradient {
   position: absolute;
   z-index: 1;
@@ -247,7 +263,31 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1rem;
+}
+
+.footer-newsletter form {
+  display: flex;
   gap: 0.5rem;
+}
+
+.footer-newsletter button {
+  background: var(--primaryColor);
+  border: 2px solid white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  color: var(--backgroundColor);
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-newsletter button:hover  {
+  background-color: var(--accentColor);
+  color: var(--primaryColor);
+  border: 2px solid var(--accentColor);
 }
 
 .footer-social-links {
