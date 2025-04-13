@@ -9,6 +9,23 @@
   </head>
   <body>
     <!-- Navigation Component Start -->
+    <div id="cart-modal" class="modal" style="display: none">
+      <div class="modal-content">
+        <span id="close-cart-modal" style="cursor: pointer">&times;</span>
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <div class="cart-buttons">
+          <button
+            class="button-primary"
+            id="process-order"
+            style="margin-right: 0.5rem"
+          >
+            Process Order
+          </button>
+          <button class="button-secondary" id="clear-cart">Clear Cart</button>
+        </div>
+      </div>
+    </div>
     <header class="navigation">
       <div class="navigation-container">
         <div class="logo-image-container">
@@ -33,7 +50,10 @@
     </header>
     <!-- Navigation Component End -->
     <!-- Header Component Start -->
-    <section class="page-header-title" alt="https://pixabay.com/photos/books-library-room-school-study-2596809/">
+    <section
+      class="page-header-title"
+      alt="https://pixabay.com/photos/books-library-room-school-study-2596809/"
+    >
       <div class="site-gradient"></div>
       <div class="page-header-title-container container">
         <h1 class="display-text">H1 Gallery Header</h1>
@@ -200,7 +220,12 @@
         <div class="footer-get-in-touch-links">
           <div class="footer-newsletter">
             <form action="" id="subscribe-form">
-              <input type="email" id="email" placeholder="Enter your email" required />
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+              />
               <button type="submit">Subscribe</button>
             </form>
             <p>Signup for our newsletter</p>
@@ -224,6 +249,5 @@
     </footer>
     <!-- Footer Component End -->
     <script src="./js/main.js"></script>
-
   </body>
 </html>
