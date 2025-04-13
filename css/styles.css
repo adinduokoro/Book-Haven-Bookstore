@@ -13,12 +13,12 @@
   --fontBody: "";
 
   /* Color */
-  --primaryColor: #2e4057; /* a strong, confident base */
-  --secondaryColor: #ee583f; /* a bold, warm contrast */
-  --accentColor: #f7b3cc; /* a soft and inviting, great for callouts, buttons, or hover states */
-  --tertiaryColor: #c7b65e; /* adds vintage warmth, can be used for headings, emphasis, or alerts */
-  --backgroundColor: #fff7ee; /* a clean, soft background that complements darker text */
-  --textColor: #131c26; /* a near-black for contrast */
+  --primaryColor: #2e4057; /* (Inkwell Blue) a strong, confident base */
+  --secondaryColor: #ee583f; /* (Intensity Indigo) a bold, warm contrast */
+  --accentColor: #f7b3cc; /* (Dusty Rose) a soft and inviting, great for callouts, buttons, or hover states */
+  --tertiaryColor: #c7b65e; /* (Age gold) adds vintage warmth, can be used for headings, emphasis, or alerts */
+  --backgroundColor: #fff7ee; /* (Parchment White) a clean, soft background that complements darker text */
+  --textColor: #131c26; /* (Bookish Black) a near-black for contrast */
 }
 
 body {
@@ -234,7 +234,7 @@ textarea {
 .footer {
   display: flex;
   justify-content: center;
-  padding: 2rem;
+  padding: 0 2rem;
   background-color: var(--primaryColor);
   color: var(--backgroundColor);
 }
@@ -251,8 +251,6 @@ textarea {
 }
 
 .footer-get-in-touch-links {
-  max-width: 20rem;
-  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -307,6 +305,11 @@ textarea {
   border-radius: 6.25rem;
   border: 2px solid var(--backgroundColor);
   padding: 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-social-links li:hover{
+  border:  2px solid var(--accentColor);
 }
 
 .footer-social-links li img {
