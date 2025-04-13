@@ -101,5 +101,17 @@
 }
 
 .checkbox #custom-order {
-width: auto;}
+  width: auto;
+}
 
+@media screen and (max-width: 768px) {
+  .about-us-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-us-image {
+    max-width: 24rem;
+    width: 100%;
+  }
+}

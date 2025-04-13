@@ -204,6 +204,12 @@ textarea {
 .navigation-link:hover {
   color: var(--secondaryColor);
 }
+
+@media screen and (max-width: 768px){
+  .navigation-links {
+    display: none;
+  }
+}
 /* Navigation Component End--------------------------------------- */
 
 /* --------------------------- OUTLET --------------------------- */
