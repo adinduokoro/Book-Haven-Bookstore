@@ -1,6 +1,7 @@
 .gallery {
   display: flex;
   justify-content: center;
+  background-color: var(--white);
 }
 
 .gallery-container {

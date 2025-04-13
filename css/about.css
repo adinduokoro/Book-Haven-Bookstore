@@ -63,7 +63,7 @@
 .client-feedback {
   display: flex;
   justify-content: center;
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 .client-form {
