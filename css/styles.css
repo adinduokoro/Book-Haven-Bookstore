@@ -13,6 +13,7 @@
   --fontBody: "";
 
   /* Color */
+  --primaryColor: #2e4057; /* (Inkwell Blue) a strong, confident base */
   --secondaryColor: #ee583f; /* (Intensity Indigo) a bold, warm contrast */
   --accentColor: #f7b3cc; /* (Dusty Rose) a soft and inviting, great for callouts, buttons, or hover states */
   --tertiaryColor: #c7b65e; /* (Age gold) adds vintage warmth, can be used for headings, emphasis, or alerts */
@@ -137,7 +138,8 @@ textarea {
   height: 100%;
 }
 
-input::placeholder, textarea::placeholder{
+input::placeholder,
+textarea::placeholder {
   font-size: 1rem;
   font-family: "Calibri", sans-serif;
 }
