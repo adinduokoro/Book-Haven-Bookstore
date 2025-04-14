@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Book Haven Gallery</title>
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/gallery.css" />
   </head>
   <body>
-    <!-- Navigation Component Start -->
+    <!-- Cart Modal Start -->
     <div id="cart-modal" class="modal" style="display: none">
       <div class="modal-content">
         <span id="close-cart-modal" style="cursor: pointer">&times;</span>
@@ -26,50 +26,59 @@
         </div>
       </div>
     </div>
+    <!-- Cart Modal End -->
+
+    <!-- Navigation Start -->
     <header class="navigation">
       <div class="navigation-container">
         <div class="logo-image-container">
-          <a href="/index.html">
-            <img src="./images/book-haven-logo.svg" />
+          <a href="index.html">
+            <img src="images/book-haven-logo.svg" alt="Book Haven Logo" />
           </a>
         </div>
-        <h1 class="page-title">Home Page</h1>
+        <h1 class="page-title">Gallery</h1>
         <ul class="navigation-links">
-          <li class="navigation-link button-text"><a href="/">Home</a></li>
           <li class="navigation-link button-text">
-            <a href="/gallery.html">Gallery</a>
+            <a href="index.html">Home</a>
           </li>
           <li class="navigation-link button-text">
-            <a href="/about.html">About Us</a>
+            <a href="gallery.html">Gallery</a>
           </li>
           <li class="navigation-link button-text">
-            <a href="/community.html">Community</a>
+            <a href="about.html">About Us</a>
+          </li>
+          <li class="navigation-link button-text">
+            <a href="community.html">Community</a>
           </li>
         </ul>
       </div>
     </header>
-    <!-- Navigation Component End -->
-    <!-- Header Component Start -->
-    <section
-      class="page-header-title"
-      alt="https://pixabay.com/photos/books-library-room-school-study-2596809/"
-    >
+    <!-- Navigation End -->
+
+    <!-- Hero Header Start -->
+    <section class="page-header-title">
       <div class="site-gradient"></div>
       <div class="page-header-title-container container">
-        <h1 class="display-text">H1 Gallery Header</h1>
+        <h1 class="display-text">Our Collection</h1>
       </div>
     </section>
-    <!-- Header Component End -->
+    <!-- Hero Header End -->
+
+    <!-- Gallery Section Start -->
     <section class="gallery">
       <div class="gallery-container container">
         <div class="gallery-button-container">
           <button class="button-primary">View Cart</button>
         </div>
         <ul class="gallery-categories">
+          <!-- Repeatable Product Cards -->
           <li class="gallery-category">
             <div class="gallery-product">
               <div class="gallery-category-image-container">
-                <img src="./images/gallery/Client3_Book1.png" alt="" />
+                <img
+                  src="images/gallery/Client3_Book1.png"
+                  alt="Brie Mine 4Ever"
+                />
               </div>
               <h3>Brie Mine 4Ever</h3>
               <p>
@@ -81,118 +90,136 @@
             </div>
             <button class="button-primary">Add to Cart</button>
           </li>
+
           <li class="gallery-category">
             <div class="gallery-product">
               <div class="gallery-category-image-container">
-                <img src="./images/gallery/Client3_Book2.png" alt="" />
+                <img
+                  src="images/gallery/Client3_Book2.png"
+                  alt="Glory Riders"
+                />
               </div>
               <h3>Glory Riders</h3>
               <p>
                 Feel the wind in your hair and the throb of the engine with
-                Glory Riders, an adrenaline-filled rollercoaster of the lives
-                and tales of freedom-riding bikers. Edgy, rugged, and
-                exhilarating.
+                Glory Riders. Edgy, rugged, and exhilarating tales of
+                freedom-riding bikers.
               </p>
             </div>
             <button class="button-primary">Add to Cart</button>
           </li>
+
           <li class="gallery-category">
             <div class="gallery-product">
               <div class="gallery-category-image-container">
-                <img src="./images/gallery/Client3_Book3.png" alt="" />
+                <img
+                  src="images/gallery/Client3_Book3.png"
+                  alt="Sorcerer's Shadowed Chronicles"
+                />
               </div>
               <h3>Sorcerer's Shadowed Chronicles</h3>
               <p>
-                Escape into a world of fantasy and magic with Sorcerer's
-                Shadowed Chronicles. This compelling fantasy novel is infused
-                with darkness, destiny, and inner strength. A fantasy novel not
-                to miss.
+                Escape into a world of fantasy and magic. Darkness, destiny, and
+                inner strength await in this unforgettable novel.
               </p>
             </div>
             <button class="button-primary">Add to Cart</button>
           </li>
+
           <li class="gallery-category">
             <div class="gallery-product">
               <div class="gallery-category-image-container">
-                <img src="./images/gallery/Client3_Magazine1.png" alt="" />
+                <img
+                  src="images/gallery/Client3_Magazine1.png"
+                  alt="Ball Magazine"
+                />
               </div>
               <h3>Ball Magazine</h3>
               <p>
-                Serve your interest with Ball, the favorite magazine of
-                pickleball enthusiasts. From pro tips to paddle reviews, it's
-                your monthly party of sport and style.
+                The go-to magazine for pickleball fans—gear reviews, pro tips,
+                and style served monthly.
               </p>
             </div>
             <button class="button-primary">Add to Cart</button>
           </li>
+
           <li class="gallery-category">
             <div class="gallery-product">
               <div class="gallery-category-image-container">
-                <img src="./images/gallery/Client3_Magazine2.png" alt="" />
+                <img
+                  src="images/gallery/Client3_Magazine2.png"
+                  alt="Travel Magazine"
+                />
               </div>
               <h3>Travel Magazine</h3>
               <p>
-                Discover through the pages of Travel, a magazine that takes you
-                around the globe from your living room. Discover places,
-                cultures, and travel advice each month.
+                Journey the world from your living room. Explore cultures,
+                places, and travel tips each issue.
               </p>
             </div>
             <button class="button-primary">Add to Cart</button>
           </li>
+
           <li class="gallery-category">
             <div class="gallery-product">
               <div class="gallery-category-image-container">
-                <img src="./images/gallery/Client3_Magazine3.png" alt="" />
+                <img
+                  src="images/gallery/Client3_Magazine3.png"
+                  alt="Eat Magazine"
+                />
               </div>
               <h3>Eat Magazine</h3>
               <p>
-                Indulge your taste buds and feed your appetite with Eat, the
-                gourmand's magazine of every foodie's fantasy. Get to know
-                luxurious recipes, gastronomic trends, and palate-tickling
-                stories from all corners of the earth.
+                Explore gourmet recipes, food trends, and stories that satisfy
+                every foodie’s soul.
               </p>
             </div>
             <button class="button-primary">Add to Cart</button>
           </li>
+
           <li class="gallery-category">
             <div class="gallery-product">
               <div class="gallery-category-image-container">
-                <img src="./images/gallery/Client3_ToteBag.png" alt="" />
+                <img src="images/gallery/Client3_ToteBag.png" alt="Tote Bag" />
               </div>
               <h3>Tote Bag</h3>
               <p>
-                Carry your reading passion proudly. This canvas tote has strong
-                black letters defiantly proclaiming: ALL I DO IS READ READ READ.
-                Durable, hip, and ideal for book lovers on the go.
+                Bold canvas tote with “ALL I DO IS READ READ READ.” Durable,
+                stylish, and made for book lovers.
               </p>
             </div>
             <button class="button-primary">Add to Cart</button>
           </li>
+
           <li class="gallery-category">
             <div class="gallery-product">
               <div class="gallery-category-image-container">
-                <img src="./images/gallery/Client3_Notebook.png" alt="" />
+                <img
+                  src="images/gallery/Client3_Notebook.png"
+                  alt="Book Haven Notebook"
+                />
               </div>
               <h3>Book Haven Notebook</h3>
               <p>
-                Take note of your most beloved quotes, thoughts, and stories in
-                our exclusive Book Haven Bookstore notebook. Simple and elegant,
-                it is the perfect reading and writing companion for every book
-                enthusiast.
+                A stylish notebook for your favorite quotes, thoughts, and
+                daydreams. Your go-to reading companion.
               </p>
             </div>
             <button class="button-primary">Add to Cart</button>
           </li>
+
           <li class="gallery-category">
             <div class="gallery-product">
               <div class="gallery-category-image-container">
-                <img src="./images/gallery/Client3_Stickers.png" alt="" />
+                <img
+                  src="images/gallery/Client3_Stickers.png"
+                  alt="Book Haven Sticker Pack"
+                />
               </div>
               <h3>Book Haven Sticker</h3>
               <p>
-                Showcase your book pride with our 4-sticker Book Haven Bookstore
-                pack. With bold designs that promote reading and being
-                one-of-a-kind, perfect for your laptop, journal, or bookshelf.
+                Spread reading love with our sticker pack. Great for laptops,
+                journals, and bookshelves.
               </p>
             </div>
             <button class="button-primary">Add to Cart</button>
@@ -200,21 +227,23 @@
         </ul>
       </div>
     </section>
-    <!-- Footer Component Start -->
+    <!-- Gallery Section End -->
+
+    <!-- Footer Start -->
     <footer class="footer">
       <div class="footer-container container">
         <ul class="footer-navigation-links">
           <li>
-            <a href="/"><p>Home</p></a>
+            <a href="index.html"><p>Home</p></a>
           </li>
           <li>
-            <a href="/gallery.html"><p>Gallery</p></a>
+            <a href="gallery.html"><p>Gallery</p></a>
           </li>
           <li>
-            <a href="/about.html"><p>About Us</p></a>
+            <a href="about.html"><p>About Us</p></a>
           </li>
           <li>
-            <a href="/community.html"><p>Community</p></a>
+            <a href="community.html"><p>Community</p></a>
           </li>
         </ul>
         <div class="footer-get-in-touch-links">
@@ -231,23 +260,16 @@
             <p>Signup for our newsletter</p>
           </div>
           <ul class="footer-social-links">
-            <li>
-              <img src="./images/instagram-logo.svg" alt="" />
-            </li>
-            <li>
-              <img src="./images/facebook-logo.svg" alt="" />
-            </li>
-            <li>
-              <img src="./images/twitter-logo.svg" alt="" />
-            </li>
-            <li>
-              <img src="./images/linkedin-logo.svg" alt="" />
-            </li>
+            <li><img src="images/instagram-logo.svg" alt="Instagram" /></li>
+            <li><img src="images/facebook-logo.svg" alt="Facebook" /></li>
+            <li><img src="images/twitter-logo.svg" alt="Twitter" /></li>
+            <li><img src="images/linkedin-logo.svg" alt="LinkedIn" /></li>
           </ul>
         </div>
       </div>
     </footer>
-    <!-- Footer Component End -->
-    <script src="./js/main.js"></script>
+    <!-- Footer End -->
+
+    <script src="js/main.js"></script>
   </body>
 </html>
