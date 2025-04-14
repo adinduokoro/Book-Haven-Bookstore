@@ -13,7 +13,6 @@
   --fontBody: "";
 
   /* Color */
-  --primaryColor: #2e4057; /* (Inkwell Blue) a strong, confident base */
   --secondaryColor: #ee583f; /* (Intensity Indigo) a bold, warm contrast */
   --accentColor: #f7b3cc; /* (Dusty Rose) a soft and inviting, great for callouts, buttons, or hover states */
   --tertiaryColor: #c7b65e; /* (Age gold) adds vintage warmth, can be used for headings, emphasis, or alerts */
@@ -160,6 +159,63 @@ textarea {
 }
 
 /* WEBSITE COMPONENTS */
+/* === CART MODAL === */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-family: "Calibri", sans-serif;
+}
+
+/* === MODAL CONTENT === */
+.modal-content {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+}
+
+.cart-buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+/* === CLOSE BUTTON === */
+#close-cart-modal {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* === CART ITEMS LIST === */
+#cart-items {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+#cart-items li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
 /* Navigation Component Start--------------------------------------- */
 .navigation {
   display: flex;
@@ -213,8 +269,29 @@ textarea {
 }
 
 @media screen and (max-width: 768px) {
+  .navigation {
+    padding: 1rem 2rem;
+    height: auto;
+  }
+
+  .navigation-container {
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo-image-container {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+  }
+
   .navigation-links {
-    display: none;
+    max-width: none;
+    margin-left: 0;
   }
 }
 /* Navigation Component End--------------------------------------- */
@@ -346,7 +423,7 @@ textarea {
 
 @media screen and (max-width: 425px) {
   .footer-newsletter form {
-flex-direction: column;    
+    flex-direction: column;
     gap: 0.5rem;
     color: var(--white);
   }
